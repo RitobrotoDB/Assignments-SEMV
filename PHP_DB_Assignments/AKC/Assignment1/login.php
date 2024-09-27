@@ -15,6 +15,10 @@
 	<input type="submit" name="insert">
 </form>
 
+<br>
+
+<a href="loginform.php"><p>Register</p></a>
+
 <?php
 	if(isset($_POST['insert']))
 	{
@@ -26,7 +30,7 @@
 			{
 				$usr = "root";
 				$pwd ="";
-				$dbname = "assignment1";
+				$dbname = "assignment1_akc";
 				
 				$connect = new mysqli("localhost", $usr, $pwd, $dbname);
 				if(!$connect)
@@ -44,7 +48,7 @@
 					if($result->num_rows == 1)
 					{
 						//ob_start();
-						header('Location: http://localhost/Assignment1/dash.html');
+						header('Location: http://localhost/assignment1AKC/dash.html');
 						//ob_end_flush();
 						die();
 					
