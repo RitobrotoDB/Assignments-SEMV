@@ -22,6 +22,6 @@ while sqr > 0:
 
 
 if(sumdigit==num):
-    print("Kaprekar")
+    print("Is a Kaprekar number")
 else:
-    print("Not")
+    print("Not a Kaprekar number")
